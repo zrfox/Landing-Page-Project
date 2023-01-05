@@ -8,54 +8,162 @@ body{
 
 
     font-family:Arial, Helvetica, sans-serif;
+
+  /* margin:480px; */
+    margin-top: 0px;
+    margin-bottom: 0px;
+   margin-left:480px;
+   margin-right: 480px;
+
+
+    flex:1;
+
+    min-height: 100vh;
+    min-width: 100vh;
+
+
+   /* padding-left:12%;
+    padding-right:12%;
+    padding-bottom: 8%; */
+
+   
+
 }
+
+.container{
+    display:flex;
+    flex-direction: column;
+    flex:1;
+}
+
 
 img{
     max-height:auto;
-    max-width: 300px;
+    max-width: 400px;
 }   
 
 .darkGray{
-    display:inline-flex;
+   display:inline-flex; 
     background-color:#1F2937 ;
-
     color:white;
-
     flex-direction: column;
     flex:1;
 
-    width:58%;
-    align-self: center;
-    padding:8%;
+    
+    justify-content: center;
 
+    margin:0px;
+/*
+    width:50%;
+    padding-left:12%;
+    padding-right:12%;
+    padding-bottom: 8%;
+*/
+
+   /* padding-left:12%;
+    padding-right:12%;
+    padding-bottom: 8%; */
+
+
+
+   /* In case I want to keep box the same size i guess min-height: 33vh;
+    min-width: 33vh; */
 }
 .white{
     background-color:#F9FAF8;
 
-    width:58%;
-    align-self: center;
-    padding:8%;
+display:inline-flex;
+flex-direction: column;
+flex:1;
+
+
+   /* width:58%;*/
+
+   
 }
+.wrapWhite{
+    display:flex;
+    flex-direction: column;
+    align-self: center;
+    justify-content: center;
+ 
+
+    align-self: center;
+    justify-content: center;
+}
+h2{text-align: center;}
+.card{
+    display:flex;
+    flex-direction: column;
+}
+.deck{
+    display:flex;
+    height:300px;
+    gap:40px;
+}
+.subtext{
+display:flex;
+flex-direction:column;
+text-align: center;
+width:150px;
+
+}
+
+#placeholder{
+    display:flex;
+    border-style: solid;
+    border-color:#3882F6;
+    max-width: 150px;
+    height: 150px;;
+    border-radius: 10px;
+    justify-content: center;
+    align-content: center;
+}
+
 
 .header{
     display:flex;
     justify-content: space-between;
-    align-content: center;
+    align-items:center;
+    margin:0px;
+
+    flex:1;
 
 }
 ul{
     list-style: none;
+    margin:22px;
 }
 
 button{
-    max-height: 32px;
-    max-width: 64px;
+
+
+    background-color: #3882F6;
+    color:white;
+    font-weight: bold;
+    border-radius: 10px;
+    font-size: larger;
+    padding: 10px 30px 10px 30px;
+    border:0px;
+    text-align: center;
 
 
 
 }
+#clearButton{
+    background-color: none;
+    color:white;
+    font-weight: bold;
+    border-style: solid;
+    border-radius: 10px;
+    border-color:white;
+    font-size: larger;
+    padding: 10px 30px 10px 30px;
+    border:0px;
+    text-align: center;
+}
 
-.topContent{
+.topContentLeft{
     display:inline-flex;
     justify-content: center;
     align-content: center;
@@ -63,15 +171,30 @@ button{
     flex-direction:column;
     flex-wrap:wrap;
 
-    width:50%
+
+    flex:1;
+
+    padding:0;
+    
+    width:50%;
+}
+
+
+.topContentBoth{
+    display:flex;
+    align-content: center;
+
+    flex:1;
+
 }
 
 #headerSub{
     display:flex;
     width:380px;
     font-size: 18px;
-    
+    margin: 5px 0px 10px 0px;
 
+    flex:1;
 
 }
 
@@ -85,7 +208,7 @@ button{
 #hero{
     font-size: 48px;
     font-weight:800;
-
+    margin-bottom:0;
 
 }
 
@@ -94,18 +217,57 @@ button{
     font-size: 24px;
     color:#F9FAF8;
     text-align: left;
+    margin-top:22px;
 }
 
 .links{
     display:flex;
-    align-content:space-around;
+    align-content:space-between;
+    justify-content: center;
 }
 
-ul{
 
-
-}
 
 a{
-    margin-right:16px;
+  
+    margin-left:22px;
+   
+    font-size:16px;
+}
+
+.gray{
+    display:flex;
+    flex-direction: column;
+    background-color: #E5E7EB;
+
+    font-style: italic;
+    font-size: 36px;
+
+
+    
+
+
+  /*  padding-left:12%;
+    padding-right:12%;
+    padding-bottom: 8%; */
+}
+#quote{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    
+}
+.whiteBottom{
+    padding:8%;
+
+    background-color:rgb(248, 248, 248) ;
+
+}
+
+.blueInside{
+    background-color: #3882F6;
+}
+
+.signUp{
 }
