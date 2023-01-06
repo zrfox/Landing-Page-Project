@@ -2,24 +2,17 @@
 
 
 body{
-    display:flex;
-    flex-direction: column;
-    background-color: black;
+  
     
 
     font-family:Arial, Helvetica, sans-serif;
 
   /* margin:480px; */
-    margin-top: 0px;
-    margin-bottom: 0px;
-   margin-left:480px;
-   margin-right: 480px;
+   margin:0;
 
 
-    flex:1;
 
-    min-height: 100vh;
-    min-width: 100vh;
+  
 
 
    /* padding-left:12%;
@@ -33,25 +26,25 @@ body{
 .container{
     display:flex;
     flex-direction: column;
-    flex:1;
+    flex:0;
+
+  
 }
 
 
-img{
-   /* max-height:auto;
-    max-width: 400px; */
 
-}   
 
 .darkGray{
-   display:inline-flex; 
     background-color:#1F2937 ;
     color:white;
+   
+   display:flex;
     flex-direction: column;
-    flex:1;
-
-    
-    justify-content: center;
+    align-content: center;
+ 
+    flex-grow:0;
+    flex-shrink:0;
+    flex-basis: content;
 
     margin:0px;
 /*
@@ -72,113 +65,49 @@ img{
 
    /* padding-left:150px;
     padding-right:150px; */
-    padding-left:20rem;
-    padding-right: 20rem;
+    padding-left:52rem;
+    padding-right: 52rem;
     padding-bottom: 5rem;
    
+
+    max-width: 100vw;
 }
-.white{
-    background-color:#F9FAF8;
-
-display:inline-flex;
-flex-direction: column;
-flex:1;
-
-
-   /* width:58%;*/
-
-   
+.headerContainer{
+   display:flex;
+   justify-content: center;
 }
-.wrapWhite{
-    display:flex;
-    flex-direction: column;
-    align-self: center;
-    justify-content: center;
- 
-
-    align-self: center;
-    justify-content: center;
-}
-h2{text-align: center;}
-.card{
-    display:flex;
-    flex-direction: column;
-}
-.deck{
-    display:flex;
-    gap:40px;
-}
-.subtext{
-display:flex;
-flex-direction:column;
-text-align: center;
-width:150px;
-
-}
-
-#placeholder{
-    display:flex;
-    border-style: solid;
-    border-color:#3882F6;
-    max-width: 150px;
-    height: 150px;;
-    border-radius: 10px;
-    justify-content: center;
-    align-content: center;
-}
-
-
 .header{
     display:flex;
-    justify-content: space-between;
     align-items:center;
-    margin:0px;
-
-    flex:1;
+    align-content: center;
+    justify-content: space-between;
+    /*width:50rem;*/
+    flex-grow: 0;
+    flex-shrink: 0;
+    flex-basis:content;
+  
+}
+#headerLogo
+{
+    font-size: 24px;
+    color:#F9FAF8;
+    margin-top:22px;
+    margin-right: 340px;
 
 }
-ul{
-    list-style: none;
-    margin:22px;
+.links{
+justify-self:right;
+   
 }
 
-button{
-
-
-    background-color: #3882F6;
-    color:white;
-    font-weight: bold;
-    border-radius: 10px;
-    font-size: larger;
-    padding: 10px 30px 10px 30px;
-    border:0px;
-    text-align: center;
-
-
-
-}
-#clearButton{
-    background-color: none;
-    color:white;
-    font-weight: bold;
-    border-style: solid;
-    border-radius: 10px;
-    border-color:white;
-    font-size: larger;
-    padding: 10px 30px 10px 30px;
-    border:0px;
-    text-align: center;
-}
 
 .topContentLeft{
-    display:inline-flex;
+    display:flex;
  
 
     flex-direction:column;
-    flex-wrap:wrap;
-
-
-    flex:1;
+    height:10rem;
+    flex:0;
 
     padding:0;
     
@@ -193,13 +122,17 @@ button{
 .topContentBoth{
     display:flex;
    align-content: center;
+   justify-content: center;
     flex:1;
 
 }
 
-#headerSub{
+
+
+#heroSub{
     display:flex;
     width:380px;
+    height: 100px;;
     font-size: 18px;
     margin: 5px 0px 10px 0px;
 
@@ -209,13 +142,105 @@ button{
 
 
 
+
+
+
+
+
+.white{
+    background-color:#F9FAF8;
+
+display:inline-flex;
+flex-direction: column;
+flex:1;
+
+
+   /* width:58%;*/
+   padding: 3rem 0 4rem 0;
+
+}
+.wrapWhite{
+    display:flex;
+    flex-direction: column;
+    align-self: center;
+}
+h2{
+    text-align: center;
+    font-size:xx-large;
+    margin:0rem 0 3rem 0;
+
+}
+.card{
+    display:flex;
+    flex-direction: column;
+}
+.deck{
+    display:flex;
+    gap:40px;
+}
+.subtext{
+display:flex;
+text-align: center;
+width:150px;
+
+}
+
+#placeholder{
+    display:flex;
+    border-style: solid;
+    border-color:#3882F6;
+    max-width: 150px;
+    height: 150px;;
+    border-radius: 10px;
+    justify-content: center;
+}
+
+
+
+
+button{
+
+
+    background-color: #3882F6;
+    color:white;
+    font-weight: bold;
+    border-radius: 10px;
+    font-size: larger;
+    padding: 10px 30px 10px 30px;
+    border:0px;
+
+
+
+}
+#clearButton{
+    background-color: none;
+    color:white;
+
+    font-weight: bold;
+    border:3px white;
+    border-style: solid;
+    border-radius: 10px;
+    font-size: larger;
+    padding: 10px 30px 10px 30px;
+    text-align: center;
+
+height:fit-content;
+display:flex;
+
+align-self: center;
+
+
+}
+
+
+
+
+
 #image{
    /* display:inline-flex;
     justify-content: start;
       width:50%;
     */
-
-  
 }
 
 #hero{
@@ -225,13 +250,7 @@ button{
     width:380px;
 }
 
-#headerLogo
-{
-    font-size: 24px;
-    color:#F9FAF8;
-    text-align: left;
-    margin-top:22px;
-}
+
 
 .links{
     display:flex;
@@ -249,38 +268,88 @@ a{
 }
 
 .gray{
-    display:flex;
+    display:inline-flex;
     flex-direction: column;
-    background-color: #E5E7EB;
-
-    font-style: italic;
-    font-size: 36px;
-
-
+    flex:1;
     
+    
+       /* width:58%;*/
+    
+
+    font-style:italic;
+    font-size: 36px;
+    background-color: rgb(219, 219, 219);
+
+
+    padding: 3rem 55rem 4rem 55rem;
+
 
 
   /*  padding-left:12%;
     padding-right:12%;
     padding-bottom: 8%; */
+
+
+        flex: 0 0 25rem;
+    align-content: center;
+    justify-content: center;
+
 }
 #quote{
-    display:flex;
-    flex-direction: column;
-    justify-content: center;
-    align-content: center;
-    
+    width:700px;
+    align-self: center;
 }
-.whiteBottom{
-    padding:8%;
+#Thor{
+    text-align:right;
+    padding-right:2rem;
+    margin-top: 0px;
+}
+#inspire{
+   
+}
 
+.whiteBottom{
+  
+    padding: 3rem 52rem 3rem 52rem;
     background-color:rgb(248, 248, 248) ;
+    display:flex;
+    justify-content: center;
 
 }
 
 .blueInside{
+    color:white;
     background-color: #3882F6;
+    border-radius: 10px;
+    width: 100%;
+
+    display:flex;
+    justify-content: space-around;
+    align-self:center;
+
+    flex:0 0 900px;
 }
 
-.signUp{
+#signUp{
+    margin-top:0px;
+    margin-bottom: 55px;
+}
+#call{
+    margin-top: 55px;
+    margin-bottom:0;
+    font-weight: bold;
+    font-size: x-large;
+}
+
+.blueLeft{
+    display:flex;
+    flex-direction: column;
+
+}
+
+.footer{
+    text-align: center;
+    background-color: #1F2937  ;
+    color: rgb(238, 238, 238);
+    padding:2vh 0 2vh 0;
 }
